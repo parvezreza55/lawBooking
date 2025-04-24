@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 export const getLawyer = () => {
   const getLawyerFromSt = localStorage.getItem("lawyers");
   if (getLawyerFromSt) {
@@ -12,9 +14,19 @@ export const setLawyer = (law) => {
   const lawyersData = getLawyer();
   const isExist = lawyersData.find((p) => p.id === law.id);
   if (isExist) {
-    return lawyersData;
+    toast("already added");
+    return false;
   }
+
   lawyersData.push(law);
-  console.log(law);
+
+  toast(`Appointment scheduled for ${law.name} successfully`);
   localStorage.setItem("lawyers", JSON.stringify(lawyersData));
+  return true;
+};
+export const removeLawyer = (id) => {
+  const lawyer = getLawyer();
+  const ramainingLawyer = lawyer.filter((law) => law.id !== id);
+  toast("remove successfully");
+  localStorage.setItem("lawyers", JSON.stringify(ramainingLawyer));
 };

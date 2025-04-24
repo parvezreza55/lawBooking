@@ -1,9 +1,8 @@
 import React from "react";
-import { CiWarning } from "react-icons/ci";
 import { Link } from "react-router";
 
-const BookingCard = ({ lawyer }) => {
-  const { name, expertise, fee } = lawyer;
+const BookingCard = ({ lawyer, handleDelete }) => {
+  const { name, expertise, fee, id } = lawyer;
 
   return (
     <div>
@@ -21,7 +20,10 @@ const BookingCard = ({ lawyer }) => {
 
         <div>
           <Link to={"/my-bookings"}>
-            <button className="rounded-full w-full text-[#FF0000] border border-[#FF0000]  font-bold py-3">
+            <button
+              onClick={() => handleDelete(id)}
+              className="rounded-full w-full text-[#FF0000] border border-[#FF0000]  font-bold py-3"
+            >
               Book Appointment Now
             </button>
           </Link>

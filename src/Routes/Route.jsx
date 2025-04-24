@@ -33,10 +33,6 @@ export const router = createBrowserRouter([
         path: "blogs",
         Component: Blogs,
       },
-      {
-        path: "/contact-us",
-        Component: ContactUs,
-      },
     ],
   },
 ]);

@@ -1,13 +1,14 @@
 import React from "react";
 import { CiWarning } from "react-icons/ci";
-import { Link, useLoaderData, useParams } from "react-router";
+import { useLoaderData, useNavigate, useParams } from "react-router";
 import { setLawyer } from "../Utils";
-
 const LawyerDetails = () => {
   const { ids } = useParams();
   const data = useLoaderData();
+  const navigate = useNavigate();
   const data1 = data.find((layers) => layers.id === parseInt(ids));
   console.log(data1);
+
   const {
     name,
     image,
@@ -19,7 +20,14 @@ const LawyerDetails = () => {
     availableDay,
   } = data1;
   const handleBooking = () => {
-    setLawyer(data1);
+    // toast("Wow so easy!");
+    // setLawyer(data1);
+    const result = setLawyer(data1);
+    if (result) {
+      navigate("/my-bookings");
+    } else {
+      navigate("");
+    }
   };
 
   return (
@@ -96,14 +104,12 @@ const LawyerDetails = () => {
           </h1>
         </div>
         <div>
-          <Link to={"/my-bookings"}>
-            <button
-              onClick={handleBooking}
-              className="rounded-full w-full bg-[#09982F] text-white font-bold py-3"
-            >
-              Book Appointment Now
-            </button>
-          </Link>
+          <button
+            onClick={handleBooking}
+            className="rounded-full w-full bg-[#09982F] text-white font-bold py-3"
+          >
+            Book Appointment Now
+          </button>
         </div>
       </div>
     </>
