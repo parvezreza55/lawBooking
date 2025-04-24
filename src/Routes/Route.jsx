@@ -20,12 +20,14 @@ export const router = createBrowserRouter([
       },
       {
         path: "/lawyerDetails/:ids",
+        hydrateFallbackElement: <p>Loading, please ....</p>,
         loader: () => fetch("../lawyerData.json"),
         Component: LawyerDetails,
       },
 
       {
         path: "my-bookings",
+        hydrateFallbackElement: <p>Loading, please....</p>,
         loader: () => fetch("../lawyerData.json"),
         Component: MyBookings,
       },

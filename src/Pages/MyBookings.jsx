@@ -3,6 +3,7 @@ import { getLawyer, removeLawyer } from "../Utils";
 
 import BookingCard from "./BookingCard";
 import { Link } from "react-router";
+import { BarChart, Legend, YAxis } from "recharts";
 
 const MyBookings = () => {
   const [displayLawyer, setDisplayLawyer] = useState([]);
@@ -18,6 +19,22 @@ const MyBookings = () => {
   return (
     <div className="mt-20">
       <div>
+        {/* <div>
+          <BarChart width={1000} height={1000} data={data}></BarChart>
+          <CartesianGrid strokeDasharray="5 5" />
+          <XAxis dataKey="name" />
+          <YAxis></YAxis>
+          <Legend></Legend>
+          <Bar
+            dataKey="fee"
+            fill="#8884d8"
+            shape={<Triangle></Triangle>}
+            lebel={{ position: "top" }}
+        
+          >
+            {data.map(entry,index)}
+          </Bar>
+        </div> */}
         <div>
           {displayLawyer.length === 0 ? (
             <h1 className="text-5xl text-center font-extrabold">
