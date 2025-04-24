@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Awlad Hossain",
+    "experience": "5+ Years Experience",
+    "availability": "Available",
+    "availableDay": ["Sunday", "Monday", "Thursday"],
+    "expertise": "Criminal Expert",
+    "license": "BD 12451254",
+    "image": "https://i.ibb.co.com/75NWQkg/law1.jpg",
+    "fee": 3620
+  },
+  {
+    "id": 2,
+    "name": "Farhana Ahmed",
+    "experience": "3+ Years Experience",
+    "availability": "Available",
+    "availableDay": ["Tuesday", "Wednesday"],
+    "expertise": "Family Law",
+    "license": "BD 56234123",
+    "image": "https://i.ibb.co.com/yBqwnq7L/law2.jpg",
+    "fee": 1280
+  },
+  {
+    "id": 3,
+    "name": "Jamal Uddin",
+    "experience": "10+ Years Experience",
+    "availability": "Available",
+    "availableDay": ["Monday", "Friday"],
+    "expertise": "Corporate Law",
+    "license": "BD 33998222",
+    "image": "https://i.ibb.co.com/RGvVBkd2/law3.jpg",
+    "fee": 9750
+  },
+  {
+    "id": 4,
+    "name": "Shirin Akter",
+    "experience": "7+ Years Experience",
+    "availability": "Available",
+    "availableDay": ["Sunday", "Tuesday", "Thursday"],
+    "expertise": "Divorce Specialist",
+    "license": "BD 77664531",
+    "image": "https://i.ibb.co.com/xqjCYMdB/law4.jpg",
+    "fee": 5420
+  },
+  {
+    "id": 5,
+    "name": "Mahmud Hasan",
+    "experience": "2+ Years Experience",
+    "availability": "Available",
+    "availableDay": ["Saturday", "Wednesday"],
+    "expertise": "Immigration Law",
+    "license": "BD 22889900",
+    "image": "https://i.ibb.co.com/ynHjxVN0/law5.jpg",
+    "fee": 1090
+  },
+  {
+    "id": 6,
+    "name": "Sakib Chowdhury",
+    "experience": "4+ Years Experience",
+    "availability": "Available",
+    "availableDay": ["Monday", "Thursday"],
+    "expertise": "Civil Law",
+    "license": "BD 33445566",
+    "image": "https://i.ibb.co.com/JWNxwHnk/law6.jpg",
+    "fee": 2310
+  },
+  {
+    "id": 7,
+    "name": "Tariq Rahman",
+    "experience": "8+ Years Experience",
+    "availability": "Available",
+    "availableDay": ["Sunday", "Wednesday"],
+    "expertise": "Real Estate Law",
+    "license": "BD 11221122",
+    "image": "https://i.ibb.co.com/xqC0ZBGX/law7.jpg",
+    "fee": 6850
+  },
+  {
+    "id": 8,
+    "name": "Naimur Rahman",
+    "experience": "6+ Years Experience",
+    "availability": "Available",
+    "availableDay": ["Tuesday", "Friday"],
+    "expertise": "Tax Consultant",
+    "license": "BD 99887744",
+    "image": "https://i.ibb.co.com/gMXvBsfq/law8.jpg",
+    "fee": 3240
+  },
+  {
+    "id": 9,
+    "name": "Rahim Mia",
+    "experience": "5+ Years Experience",
+    "availability": "Available",
+    "availableDay": ["Saturday", "Monday"],
+    "expertise": "Labor Law",
+    "license": "BD 44556677",
+    "image": "https://i.ibb.co.com/Y7kQVM85/law9.jpg",
+    "fee": 1790
+  },
+  {
+    "id": 10,
+    "name": "Nasir Uddin",
+    "experience": "9+ Years Experience",
+    "availability": "Available",
+    "availableDay": ["Wednesday", "Thursday"],
+    "expertise": "Banking Law",
+    "license": "BD 66778899",
+    "image": "https://i.ibb.co.com/DfDrYLDr/law10.jpg",
+    "fee": 8000
+  },
+  {
+    "id": 11,
+    "name": "Faisal Karim",
+    "experience": "1+ Year Experience",
+    "availability": "Available",
+    "availableDay": ["Tuesday", "Friday"],
+    "expertise": "Startup Law",
+    "license": "BD 12344321",
+    "image": "https://i.ibb.co.com/0VB9rCGc/law11.jpg",
+    "fee": 1130
+  },
+  {
+    "id": 12,
+    "name": "Mehjabin Rahman",
+    "experience": "12+ Years Experience",
+    "availability": "Available",
+    "availableDay": ["Sunday", "Thursday"],
+    "expertise": "Constitutional Law",
+    "license": "BD 89007890",
+    "image": "https://i.ibb.co.com/ym1wTvGT/law12.jpg",
+    "fee": 9990
+  }
+]

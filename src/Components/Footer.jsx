@@ -1,5 +1,5 @@
 import React from "react";
-import bannerImg from "../assets/logo.png";
+import navImg from "../assets/logo.png";
 import { Link, NavLink } from "react-router";
 import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -7,12 +7,12 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <>
-      <footer className="footer footer-horizontal footer-center bg-[#0F0F0F]  text-white rounded p-10">
+      <footer className="footer footer-horizontal footer-center bg-[#0F0F0F]  text-white rounded p-10 gap-3 mt-20">
         <nav>
           <div className="grid grid-flow-col gap-4">
             <Link to={"/"} className=" text-xl">
               <div className="flex gap-1 items-center ">
-                <img src={bannerImg} alt="" />
+                <img src={navImg} alt="" />
                 <h1 className="text-4xl font-extrabold">Law.BD</h1>
               </div>
             </Link>
