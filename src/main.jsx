@@ -6,6 +6,9 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Roots from "./Roots/Roots.jsx";
 import ErrorPage from "./Pages/ErrorPage.jsx";
 import Home from "./Pages/Home.jsx";
+import MyBookings from "./Pages/MyBookings.jsx";
+import Blogs from "./Pages/Blogs.jsx";
+import ContactUs from "./Pages/ContactUs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +19,18 @@ const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
+      },
+      {
+        path: "my-bookings",
+        Component: MyBookings,
+      },
+      {
+        path: "blogs",
+        Component: Blogs,
+      },
+      {
+        path: "/contact-us",
+        Component: ContactUs,
       },
     ],
   },
