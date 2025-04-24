@@ -6,7 +6,7 @@ const LawyerCard = ({ lawyer }) => {
     lawyer;
   return (
     <>
-      <div className="card card-side bg-base-100 gap-7 shadow-sm">
+      <div className="card card-side bg-base-100 gap-7 shadow-sm border border-[#14141420]">
         <figure>
           <img src={image} alt="Movie" className="w-60 h-60 p-4 rounded-4xl" />
         </figure>

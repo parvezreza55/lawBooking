@@ -1,5 +1,7 @@
 import React from "react";
-import { useLoaderData, useParams } from "react-router";
+import { CiWarning } from "react-icons/ci";
+import { Link, useLoaderData, useParams } from "react-router";
+import { setLawyer } from "../Utils";
 
 const LawyerDetails = () => {
   const { ids } = useParams();
@@ -13,10 +15,12 @@ const LawyerDetails = () => {
     experience,
     availability,
     expertise,
-    id,
     fee,
     availableDay,
   } = data1;
+  const handleBooking = () => {
+    setLawyer(data1);
+  };
 
   return (
     <>
@@ -28,7 +32,7 @@ const LawyerDetails = () => {
         </p>
       </div>
       <div className="mt-10">
-        <div className="card card-side bg-base-100 gap-7 shadow-sm">
+        <div className="card card-side bg-base-100 gap-7 shadow-sm border border-[#14141420]">
           <figure>
             <img
               src={image}
@@ -51,8 +55,11 @@ const LawyerDetails = () => {
               <h1>
                 <span className="flex gap-3 items-center">
                   <span className="font-bold">Availability</span>
-                  {availableDay.map((day) => (
-                    <p className="font-semibold border border-[#FFA000] bg-[#FFA00020] px-4 rounded-full py-2">
+                  {availableDay.map((day, index) => (
+                    <p
+                      key={index}
+                      className="font-semibold border border-[#FFA000] bg-[#FFA00020] px-4 rounded-full py-2"
+                    >
                       {" "}
                       {day}
                     </p>
@@ -67,6 +74,36 @@ const LawyerDetails = () => {
               </span>
             </h1>
           </div>
+        </div>
+      </div>
+
+      {/* appointment div  */}
+      <div className="space-y-3 py-10 bg-base-100 shadow-sm rounded-2xl px-5 mt-7 border border-[#14141420]">
+        <h3 className="text-2xl font-bold text-center ">Book an Appointment</h3>
+        <div className="border border-dashed border-[#14141420]"></div>
+        <div className="flex justify-between">
+          <h1>Availability</h1>
+          <p className="bg-[#09982F10] text-[#09982F] px-3 py-1 rounded-full">
+            Lawyer {availability} Today
+          </p>
+        </div>
+        <div className="border  border-[#14141420]"></div>
+        <div>
+          <h1 className="border-[#FFA000] text-[#FFA000] bg-[#FFA00020] px-4 rounded-full py-2 flex items-center gap-1">
+            <CiWarning />
+            Due to high patient volume, we are currently accepting appointments
+            for today only. We appreciate your understanding and cooperation.
+          </h1>
+        </div>
+        <div>
+          <Link to={"/my-bookings"}>
+            <button
+              onClick={handleBooking}
+              className="rounded-full w-full bg-[#09982F] text-white font-bold py-3"
+            >
+              Book Appointment Now
+            </button>
+          </Link>
         </div>
       </div>
     </>
