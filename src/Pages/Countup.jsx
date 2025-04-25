@@ -9,14 +9,16 @@ const Coutnup = () => {
   return (
     <div>
       <div className="text-center mt-20">
-        <h1 className="text-4xl font-bold">We Provide Best Law Services</h1>
-        <p className="opacity-60">
-          Our platform connects you with verified, experienced Lawyers across
-          various specialities — all at your convenience.
+        <h1 className="text-4xl font-bold mb-5">
+          We Provide Best Law Services
+        </h1>
+        <p className="opacity-70 text-lg">
+          Our platform offer top quality leagal servicies with professionalism,
+          dedication and client-focoused solutions to ensure justice.
         </p>
       </div>
       {/* container div  */}
-      <div className="grid grid-cols-4 justify-items-center mt-10">
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 justify-items-center mt-10">
         <div className="bg-[#0F0F0F10] p-5 rounded-2xl w-3/4">
           <div>
             <img src={lawyerImg} alt="" />

@@ -6,7 +6,7 @@
     "availability": "Available",
     "availableDay": ["Sunday", "Monday", "Thursday"],
     "expertise": "Criminal Expert",
-    "license": "BD 12451254",
+    "license": "BD-12451254",
     "image": "https://i.ibb.co.com/75NWQkg/law1.jpg",
     "fee": 3620
   },
@@ -15,17 +15,9 @@
     "name": "Farhana Ahmed",
     "experience": "3+ Years Experience",
     "availability": "Available",
-    "availableDay": [
-      "Saturday",
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
+    "availableDay": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"],
     "expertise": "Family Law",
-    "license": "BD 56234123",
+    "license": "BD-56234123",
     "image": "https://i.ibb.co.com/yBqwnq7L/law2.jpg",
     "fee": 1280
   },
@@ -34,17 +26,9 @@
     "name": "Jamal Uddin",
     "experience": "10+ Years Experience",
     "availability": "Available",
-    "availableDay": [
-      "Saturday",
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
+    "availableDay": ["Saturday", "Sunday", "Monday", "Thursday", "Friday"],
     "expertise": "Corporate Law",
-    "license": "BD 33998222",
+    "license": "BD-33998222",
     "image": "https://i.ibb.co.com/RGvVBkd2/law3.jpg",
     "fee": 9750
   },
@@ -55,7 +39,7 @@
     "availability": "Available",
     "availableDay": ["Sunday", "Tuesday", "Thursday"],
     "expertise": "Divorce Specialist",
-    "license": "BD 77664531",
+    "license": "BD-77664531",
     "image": "https://i.ibb.co.com/xqjCYMdB/law4.jpg",
     "fee": 5420
   },
@@ -64,17 +48,9 @@
     "name": "Mahmud Hasan",
     "experience": "2+ Years Experience",
     "availability": "Available",
-    "availableDay": [
-      "Saturday",
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
+    "availableDay": ["Saturday", "Sunday", "Wednesday", "Thursday", "Friday"],
     "expertise": "Immigration Law",
-    "license": "BD 22889900",
+    "license": "BD-22889900",
     "image": "https://i.ibb.co.com/ynHjxVN0/law5.jpg",
     "fee": 1090
   },
@@ -83,17 +59,9 @@
     "name": "Sakib Chowdhury",
     "experience": "4+ Years Experience",
     "availability": "Available",
-    "availableDay": [
-      "Saturday",
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
+    "availableDay": ["Saturday", "Sunday", "Monday", "Tuesday", "Friday"],
     "expertise": "Civil Law",
-    "license": "BD 33445566",
+    "license": "BD-33445566",
     "image": "https://i.ibb.co.com/JWNxwHnk/law6.jpg",
     "fee": 2310
   },
@@ -102,17 +70,9 @@
     "name": "Tariq Rahman",
     "experience": "8+ Years Experience",
     "availability": "Available",
-    "availableDay": [
-      "Saturday",
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
+    "availableDay": ["Saturday", "Sunday", "Wednesday", "Thursday", "Friday"],
     "expertise": "Real Estate Law",
-    "license": "BD 11221122",
+    "license": "BD-11221122",
     "image": "https://i.ibb.co.com/xqC0ZBGX/law7.jpg",
     "fee": 6850
   },
@@ -131,7 +91,7 @@
       "Friday"
     ],
     "expertise": "Tax Consultant",
-    "license": "BD 99887744",
+    "license": "BD-99887744",
     "image": "https://i.ibb.co.com/gMXvBsfq/law8.jpg",
     "fee": 3240
   },
@@ -142,7 +102,7 @@
     "availability": "Available",
     "availableDay": ["Saturday", "Monday"],
     "expertise": "Labor Law",
-    "license": "BD 44556677",
+    "license": "BD-44556677",
     "image": "https://i.ibb.co.com/Y7kQVM85/law9.jpg",
     "fee": 1790
   },
@@ -161,7 +121,7 @@
       "Friday"
     ],
     "expertise": "Banking Law",
-    "license": "BD 66778899",
+    "license": "BD-66778899",
     "image": "https://i.ibb.co.com/DfDrYLDr/law10.jpg",
     "fee": 8000
   },
@@ -172,7 +132,7 @@
     "availability": "Available",
     "availableDay": ["Tuesday", "Friday"],
     "expertise": "Startup Law",
-    "license": "BD 12344321",
+    "license": "BD-12344321",
     "image": "https://i.ibb.co.com/0VB9rCGc/law11.jpg",
     "fee": 1130
   },
@@ -181,17 +141,9 @@
     "name": "Mehjabin Rahman",
     "experience": "12+ Years Experience",
     "availability": "Available",
-    "availableDay": [
-      "Saturday",
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
+    "availableDay": ["Saturday", "Sunday", "Monday", "Thursday", "Friday"],
     "expertise": "Constitutional Law",
-    "license": "BD 89007890",
+    "license": "BD-89007890",
     "image": "https://i.ibb.co.com/ym1wTvGT/law12.jpg",
     "fee": 9990
   }

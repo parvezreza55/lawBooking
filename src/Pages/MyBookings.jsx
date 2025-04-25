@@ -3,7 +3,23 @@ import { getLawyer, removeLawyer } from "../Utils";
 
 import BookingCard from "./BookingCard";
 import { Link } from "react-router";
-import { BarChart, Legend, YAxis } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from "recharts";
+
+const getPath = (x, y, width, height) =>
+  `M${x},${y + height}
+   C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3} ${
+    x + width / 2
+  }, ${y}
+   C${x + width / 2},${y + height / 3} ${x + (2 * width) / 3},${y + height} ${
+    x + width
+  }, ${y + height}
+   Z`;
+
+const TriangleBar = (props) => {
+  const { fill, x, y, width, height } = props;
+
+  return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
+};
 
 const MyBookings = () => {
   const [displayLawyer, setDisplayLawyer] = useState([]);
@@ -16,25 +32,23 @@ const MyBookings = () => {
     removeLawyer(id);
     setDisplayLawyer(getLawyer());
   };
+
   return (
     <div className="mt-20">
+      {displayLawyer.length === 0 ? (
+        ""
+      ) : (
+        <div className="flex justify-center mb-10">
+          <BarChart width={1000} height={300} data={displayLawyer}>
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip></Tooltip>
+            <CartesianGrid></CartesianGrid>
+            <Bar dataKey="fee" fill="#00C49F" shape={<TriangleBar />} />
+          </BarChart>
+        </div>
+      )}
       <div>
-        {/* <div>
-          <BarChart width={1000} height={1000} data={data}></BarChart>
-          <CartesianGrid strokeDasharray="5 5" />
-          <XAxis dataKey="name" />
-          <YAxis></YAxis>
-          <Legend></Legend>
-          <Bar
-            dataKey="fee"
-            fill="#8884d8"
-            shape={<Triangle></Triangle>}
-            lebel={{ position: "top" }}
-        
-          >
-            {data.map(entry,index)}
-          </Bar>
-        </div> */}
         <div>
           {displayLawyer.length === 0 ? (
             <h1 className="text-5xl text-center font-extrabold">
@@ -47,9 +61,10 @@ const MyBookings = () => {
           )}
         </div>
 
-        <p className="text-center opacity-80 mt-5 ">
-          Our platform connects you with verified, experienced Lawyers across
-          various specialties — all at your convenience.
+        <p className="text-center opacity-80 mt-5 text-xl">
+          Each appointment is handled with sincerity,dedication and utmost
+          professionalism to ensure every client feels heard,respected and fully
+          supported in their legal journey.
         </p>
         <div className="text-center mt-5">
           {displayLawyer.length === 0 ? (

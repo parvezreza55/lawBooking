@@ -13,15 +13,16 @@ const LawyerContainer = ({ data }) => {
   }, [data, showAll]);
   return (
     <div className="mt-20">
-      <h1 className="text-5xl text-center font-extrabold">Our Best Lawyers</h1>
-      <p className="text-center opacity-80">
-        Our platform connects you with verified, experienced Lawyers across
-        various specialties — all at your convenience. Whether it's a routine
-        checkup or urgent consultation, book appointments in minutes and receive
-        quality care you can trust.
+      <h1 className="text-5xl text-center font-extrabold mb-5">
+        Our Best Lawyers
+      </h1>
+      <p className="text-center opacity-90 text-lg">
+        Our best lawyer are experienced, reliable and commited to delivering
+        exceptional legal solutions, ensuring you receive the heighest standard
+        of support in every case.
       </p>
 
-      <div className="grid grid-cols-2 gap-10 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
         {displayLawyer.map((lawyer) => (
           <LawyerCard key={lawyer.id} lawyer={lawyer}></LawyerCard>
         ))}

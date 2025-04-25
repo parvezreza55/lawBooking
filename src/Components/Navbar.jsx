@@ -5,7 +5,7 @@ import navImg from "../assets/logo.png";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar p-0 bg-base-100 shadow-sm px-8 py-5 md:px-12 lg:px-24">
+      <div className="navbar p-0 bg-base-100 shadow-sm  py-5 md:px-12 lg:px-24">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,30 +30,47 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <NavLink
+                  to={"/"}
+                  className={({ isActive }) => (isActive ? "underline" : "")}
+                >
+                  Home
+                </NavLink>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <NavLink
+                  to={"/my-bookings"}
+                  className={({ isActive }) => (isActive ? "underline" : "")}
+                >
+                  My-Bookings
+                </NavLink>
               </li>
               <li>
-                <a>Item 3</a>
+                <NavLink
+                  to={"/blogs"}
+                  className={({ isActive }) => (isActive ? "underline" : "")}
+                >
+                  Blogs
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to={"/contact-us"}
+                  className={({ isActive }) => (isActive ? "underline" : "")}
+                >
+                  Contact Us
+                </NavLink>
               </li>
             </ul>
           </div>
-          <Link to={"/"} className=" text-xl">
-            <div className="flex gap-1 items-center ">
-              <img src={navImg} alt="" />
-              <h1 className="text-4xl font-extrabold">Law.BD</h1>
-            </div>
-          </Link>
+          <div className="hidden md:flex">
+            <Link to={"/"} className=" text-xl">
+              <div className="flex gap-1  items-center ">
+                <img src={navImg} alt="" />
+                <h1 className="text-4xl font-extrabold">Law.BD</h1>
+              </div>
+            </Link>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-lg font-medium text-[#0F0F0F70]">
@@ -91,10 +108,18 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end hidden md:flex">
           <a className="btn bg-[#0EA106] text-white rounded-full font-bold text-lg p-6">
             Contact Now
           </a>
+        </div>
+        <div className="navbar-end  flex md:hidden">
+          <Link to={"/"} className=" text-xl">
+            <div className="flex gap-1  items-center ">
+              <img src={navImg} alt="" />
+              <h1 className="text-4xl font-extrabold">Law.BD</h1>
+            </div>
+          </Link>
         </div>
       </div>
     </>

@@ -2,12 +2,13 @@ import React from "react";
 import { CiWarning } from "react-icons/ci";
 import { useLoaderData, useNavigate, useParams } from "react-router";
 import { setLawyer } from "../Utils";
+import DynamicEorror from "./DynamicEorror";
 const LawyerDetails = () => {
   const { ids } = useParams();
   const data = useLoaderData();
   const navigate = useNavigate();
-  const data1 = data.find((layers) => layers.id === parseInt(ids));
-  console.log(data1);
+  const data1 = data.find((layers) => layers.license === ids);
+  if (!data1) return <DynamicEorror ids={ids}></DynamicEorror>;
 
   const {
     name,
@@ -20,8 +21,6 @@ const LawyerDetails = () => {
     availableDay,
   } = data1;
   const handleBooking = () => {
-    // toast("Wow so easy!");
-    // setLawyer(data1);
     const result = setLawyer(data1);
     if (result) {
       navigate("/my-bookings");
@@ -32,7 +31,7 @@ const LawyerDetails = () => {
 
   return (
     <>
-      <div className="text-center bg-[#0F0F0F10] py-20 rounded-2xl mt-10">
+      <div className="text-center bg-[#0F0F0F10] py-20 rounded-2xl mt-10 px-10 md:px-5">
         <h1 className="text-4xl font-extrabold">Lawyer’s Profile Details</h1>
         <p className="mt-3 opacity-80 ">
           A lawyer is a professional who provides legal advice, represents
@@ -40,7 +39,7 @@ const LawyerDetails = () => {
         </p>
       </div>
       <div className="mt-10">
-        <div className="card card-side bg-base-100 gap-7 shadow-sm border border-[#14141420]">
+        <div className="card card-side bg-base-100 gap-7 shadow-sm border py-5 px-3 border-[#14141420]">
           <figure>
             <img
               src={image}
@@ -48,7 +47,7 @@ const LawyerDetails = () => {
               className="w-60 h-60 p-4 rounded-4xl"
             />
           </figure>
-          <div className="flex flex-col justify-center text-left  gap-2 ">
+          <div className="flex flex-col justify-center text-left gap-1 md:gap-2 ">
             <div>
               <p className="bg-[#176AE510] text-[#176AE5] px-3 py-1 rounded-full w-fit">
                 {experience}
@@ -60,13 +59,13 @@ const LawyerDetails = () => {
               <p>&reg; License No: {license}</p>
             </div>
             <div>
-              <h1>
-                <span className="flex gap-3 items-center">
-                  <span className="font-bold">Availability</span>
+              <h1 className="hidden md:flex ">
+                <span className="grid grid-cols-2 gap-1 md:grid-cols-3 lg:grid-cols-8 items-center">
+                  <span className="font-bold mr-0">Availability</span>
                   {availableDay.map((day, index) => (
                     <p
                       key={index}
-                      className="font-semibold border border-[#FFA000] bg-[#FFA00020] px-4 rounded-full py-2"
+                      className="font-semibold border border-[#FFA000] bg-[#FFA00020] px-4 rounded-full py-1"
                     >
                       {" "}
                       {day}
@@ -74,6 +73,7 @@ const LawyerDetails = () => {
                   ))}
                 </span>
               </h1>
+              <h1 className="flex md:hidden font-bold">{availability}</h1>
             </div>
             <h1>
               <span className="font-bold"> Consultation Fee:</span>{" "}

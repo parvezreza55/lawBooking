@@ -57,19 +57,21 @@ const Footer = () => {
         <div className="border w-full border-dashed border-[#FFFFFF70]"></div>
         <nav>
           <div className="grid grid-flow-col gap-4">
-            <a>
+            <Link
+              to={"https://www.facebook.com/parvez.reza.312357/"}
+              target="_blank"
+            >
               <FaFacebook size={50} className=" p-2" />
-            </a>
-
-            <a>
-              <FaXTwitter size={50} className="p-2"></FaXTwitter>
-            </a>
-            <a>
+            </Link>
+            <Link
+              to={"https://www.linkedin.com/in/parvez-reza-9a78a42a8/"}
+              target="_blank"
+            >
               <FaLinkedin size={50} className="p-2"></FaLinkedin>
-            </a>
-            <a>
+            </Link>
+            <Link to={"https://www.youtube.com"} target="_blank">
               <FaYoutube size={50} className=" p-2"></FaYoutube>
-            </a>
+            </Link>
           </div>
         </nav>
       </footer>
