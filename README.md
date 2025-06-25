@@ -91,11 +91,15 @@ Creative answers to:
 
 ```json
 "dependencies": {
-  "react": "^18.x.x",
-  "react-dom": "^18.x.x",
-  "react-router-dom": "^6.x.x",
-  "react-countup": "^6.x.x",
-  "recharts": "^2.x.x"
+  "@tailwindcss/vite": "^4.1.4",
+    "react": "^19.0.0",
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-router": "^7.5.1",
+    "react-toastify": "^11.0.5",
+    "recharts": "^2.15.3",
+    "tailwindcss": "^4.1.4"
 }
 ```
 
