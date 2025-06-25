@@ -117,6 +117,6 @@ npm run dev
 
 ## 🔗 Relevant Links
 
-Client Repo: `https://github.com/parvezreza55/lawBooking`
+Client Repo: [Repository](https://github.com/parvezreza55/lawBooking)
 
-Live Site: `https://majestic-pudding-1600af.netlify.app/`
+Live Site: [Live](https://majestic-pudding-1600af.netlify.app/)
